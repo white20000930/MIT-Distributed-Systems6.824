@@ -55,11 +55,10 @@ func ihash(key string) int {
 // main/mrworker.go calls this function.
 func Worker(mapf func(string, string) []KeyValue,
 	reducef func(string, []string) string) {
-	fmt.Println("+++Test+++ in Worker")
 	keepworking := true
 	for keepworking {
 		task := CallTask()
-		fmt.Println("before switch", task)
+
 		switch task.TaskType {
 		case MapTask:
 			{
@@ -82,6 +81,7 @@ func Worker(mapf func(string, string) []KeyValue,
 			}
 		case ExitTask:
 			{
+				fmt.Println("!!!Finish!!!")
 				keepworking = false
 			}
 		}
@@ -91,7 +91,6 @@ func Worker(mapf func(string, string) []KeyValue,
 
 }
 func CallTask() Task {
-	fmt.Println("+++Test+++ in CallTask")
 	args := struct{}{}
 	reply := Task{}
 	ok := call("Coordinator.PollTask", &args, &reply)

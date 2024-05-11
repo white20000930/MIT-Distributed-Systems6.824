@@ -51,13 +51,15 @@ func (c *Coordinator) PollTask(args *struct{}, reply *Task) error {
 	case Maping:
 		{
 			if len(c.Map_TaskChan) > 0 { //have task to do
+				fmt.Println("+++Test+++ in PollTask, len> 0")
 				taskPtr := <-c.Map_TaskChan
 				*reply = *taskPtr
 				taskPtr.State = Working
 			} else {
-
+				fmt.Println("+++Test+++ in PollTask, WaitingTask")
 				reply.TaskType = WaitingTask //when no task to do
 				c.CheckProgress()
+				fmt.Println("+++Test+++ in PollTask, before return")
 				return nil
 
 			}
@@ -80,13 +82,15 @@ func (c *Coordinator) PollTask(args *struct{}, reply *Task) error {
 		}
 	case AllDone:
 		{
+			reply.TaskType = ExitTask
 		}
 	}
 	return nil
 }
 
 func (c *Coordinator) TaskDone(args *Task, reply *struct{}) error {
-
+	lock.Lock()
+	defer lock.Unlock()
 	if c.TaskSlice[args.TaskId].State == Working {
 		c.TaskSlice[args.TaskId].State = Done
 	}
@@ -114,7 +118,9 @@ func (c *Coordinator) Done() bool {
 	ret := false
 
 	// Your code here.
-
+	if c.Prog == AllDone {
+		ret = true
+	}
 	return ret
 }
 
@@ -175,7 +181,7 @@ func (c *Coordinator) makeReduceTasks() {
 		c.TaskSlice = append(c.TaskSlice, &task)
 
 		fmt.Println("make a reduce task :", &task)
-		c.Map_TaskChan <- &task
+		c.Reduce_TaskChan <- &task
 	}
 
 }
@@ -205,10 +211,10 @@ func (c *Coordinator) CheckProgress() bool {
 	if c.Prog == Maping {
 		c.makeReduceTasks()
 		c.Prog = Reducing
+
 	} else if c.Prog == Reducing {
 		c.Prog = AllDone
 	}
 
-	fmt.Println("***Prog*** after CheckProgress is: ", c.Prog)
 	return true
 }
