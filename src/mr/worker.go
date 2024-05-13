@@ -19,6 +19,7 @@ type Task struct {
 	ReduceNum int
 	FileSlice []string
 	State     TaskState
+	StartTime time.Time
 }
 
 type TaskType int
@@ -82,7 +83,7 @@ func Worker(mapf func(string, string) []KeyValue,
 		case ExitTask:
 			{
 				fmt.Println("!!!Finish!!!")
-				keepworking = false
+				return
 			}
 		}
 

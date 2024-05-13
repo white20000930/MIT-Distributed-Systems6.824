@@ -1,0 +1,1945 @@
+*** Starting wc test.
++++Test+++ in MakeCoordinator
++++Test+++ in makeMapTasks
+make a map task : &{0 0 10 [../pg-being_ernest.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 1 10 [../pg-dorian_gray.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 2 10 [../pg-frankenstein.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 3 10 [../pg-grimm.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 4 10 [../pg-huckleberry_finn.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 5 10 [../pg-metamorphosis.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 6 10 [../pg-sherlock_holmes.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 7 10 [../pg-tom_sawyer.txt] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in RunTime
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 2 10 [../pg-frankenstein.txt] 1 2024-05-12 16:34:02.007108758 +0800 CST}
+CallTask reply {0 0 10 [../pg-being_ernest.txt] 1 2024-05-12 16:34:02.007041559 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in DoMapTask
+CallTask reply {0 1 10 [../pg-dorian_gray.txt] 1 2024-05-12 16:34:02.007094305 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 3 10 [../pg-grimm.txt] 1 2024-05-12 16:34:02.090616487 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 4 10 [../pg-huckleberry_finn.txt] 1 2024-05-12 16:34:02.258757662 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 5 10 [../pg-metamorphosis.txt] 1 2024-05-12 16:34:02.270838354 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 6 10 [../pg-sherlock_holmes.txt] 1 2024-05-12 16:34:02.369965105 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 7 10 [../pg-tom_sawyer.txt] 1 2024-05-12 16:34:02.501997204 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in makeReduceTasks
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
+CallTask reply {1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 1 2024-05-12 16:34:03.662428156 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in PollTask
+CallTask reply {1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 1 2024-05-12 16:34:03.728075381 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in PollTask
+CallTask reply {1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 1 2024-05-12 16:34:03.757703543 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 1 2024-05-12 16:34:03.768479275 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 1 2024-05-12 16:34:03.808542593 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 1 2024-05-12 16:34:03.832876223 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 1 2024-05-12 16:34:03.898730252 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 1 2024-05-12 16:34:03.899999087 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 1 2024-05-12 16:34:03.917277602 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 1 2024-05-12 16:34:03.994760557 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask
++++Test+++ in PollTask
+unexpected EOF
+unexpected EOF
+call failed!
+call failed!
++++Test+++ in DoMapTask
++++Test+++ in DoMapTask
+unexpected EOF
+call failed!
++++Test+++ in DoMapTask
+--- wc test: PASS
+*** Starting indexer test.
++++Test+++ in MakeCoordinator
++++Test+++ in makeMapTasks
+make a map task : &{0 0 10 [../pg-being_ernest.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 1 10 [../pg-dorian_gray.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 2 10 [../pg-frankenstein.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 3 10 [../pg-grimm.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 4 10 [../pg-huckleberry_finn.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 5 10 [../pg-metamorphosis.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 6 10 [../pg-sherlock_holmes.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 7 10 [../pg-tom_sawyer.txt] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in RunTime
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 0 10 [../pg-being_ernest.txt] 1 2024-05-12 16:34:07.237418715 +0800 CST}
++++Test+++ in DoMapTask
+CallTask reply {0 1 10 [../pg-dorian_gray.txt] 1 2024-05-12 16:34:07.237566834 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 2 10 [../pg-frankenstein.txt] 1 2024-05-12 16:34:07.255558662 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 3 10 [../pg-grimm.txt] 1 2024-05-12 16:34:07.276178024 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 4 10 [../pg-huckleberry_finn.txt] 1 2024-05-12 16:34:07.299522936 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 5 10 [../pg-metamorphosis.txt] 1 2024-05-12 16:34:07.306711816 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 6 10 [../pg-sherlock_holmes.txt] 1 2024-05-12 16:34:07.322113774 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 7 10 [../pg-tom_sawyer.txt] 1 2024-05-12 16:34:07.347131591 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in makeReduceTasks
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
+CallTask reply {1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 1 2024-05-12 16:34:08.368860453 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in PollTask
+CallTask reply {1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 1 2024-05-12 16:34:08.389900932 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 1 2024-05-12 16:34:08.392241616 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 1 2024-05-12 16:34:08.40516672 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 1 2024-05-12 16:34:08.406514708 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in callDone
+{}
++++Test+++ in PollTask
++++Test+++ in TaskDone 2
+CallTask reply {1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 1 2024-05-12 16:34:08.42180963 +0800 CST}
++++Test+++ in DoReduceTask
+{}
++++Test+++ in PollTask
+CallTask reply {1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 1 2024-05-12 16:34:08.422257452 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 1 2024-05-12 16:34:08.43655313 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 1 2024-05-12 16:34:08.437469066 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 1 2024-05-12 16:34:08.451314765 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
+CallTask reply {3 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+!!!Finish!!!
++++Test+++ in PollTask
+CallTask reply {3 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+!!!Finish!!!
+--- indexer test: PASS
+*** Starting map parallelism test.
++++Test+++ in MakeCoordinator
++++Test+++ in makeMapTasks
+make a map task : &{0 0 10 [../pg-being_ernest.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 1 10 [../pg-dorian_gray.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 2 10 [../pg-frankenstein.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 3 10 [../pg-grimm.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 4 10 [../pg-huckleberry_finn.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 5 10 [../pg-metamorphosis.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 6 10 [../pg-sherlock_holmes.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 7 10 [../pg-tom_sawyer.txt] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in RunTime
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 1 10 [../pg-dorian_gray.txt] 1 2024-05-12 16:34:11.260238227 +0800 CST}
++++Test+++ in DoMapTask
+CallTask reply {0 0 10 [../pg-being_ernest.txt] 1 2024-05-12 16:34:11.26013243 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in callDone
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 2 10 [../pg-frankenstein.txt] 1 2024-05-12 16:34:12.266212423 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 3 10 [../pg-grimm.txt] 1 2024-05-12 16:34:12.268527274 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in TaskDone 2
+{}
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 4 10 [../pg-huckleberry_finn.txt] 1 2024-05-12 16:34:13.278264421 +0800 CST}
++++Test+++ in DoMapTask
+CallTask reply {0 5 10 [../pg-metamorphosis.txt] 1 2024-05-12 16:34:13.278508451 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in callDone
+{}
++++Test+++ in TaskDone 2
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+{}
+CallTask reply {0 6 10 [../pg-sherlock_holmes.txt] 1 2024-05-12 16:34:14.28388169 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 7 10 [../pg-tom_sawyer.txt] 1 2024-05-12 16:34:14.284934183 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in TaskDone 2
+{}
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in makeReduceTasks
++++Test+++ in PickReduceFiles
++++Test+++ in PollTask
+make a reduce task : &{1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
+CallTask reply {1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 1 2024-05-12 16:34:15.296699728 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 1 2024-05-12 16:34:15.298994316 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 1 2024-05-12 16:34:15.300632969 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 1 2024-05-12 16:34:15.301968848 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 1 2024-05-12 16:34:15.303258056 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 1 2024-05-12 16:34:15.304663535 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 1 2024-05-12 16:34:15.305943159 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 1 2024-05-12 16:34:15.307215123 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 1 2024-05-12 16:34:15.308484224 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 1 2024-05-12 16:34:15.309866514 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask
+unexpected EOF
+unexpected EOF
+call failed!
++++Test+++ in DoMapTask
+call failed!
++++Test+++ in DoMapTask
+--- map parallelism test: PASS
+*** Starting reduce parallelism test.
++++Test+++ in MakeCoordinator
++++Test+++ in makeMapTasks
+make a map task : &{0 0 10 [../pg-being_ernest.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 1 10 [../pg-dorian_gray.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 2 10 [../pg-frankenstein.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 3 10 [../pg-grimm.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 4 10 [../pg-huckleberry_finn.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 5 10 [../pg-metamorphosis.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 6 10 [../pg-sherlock_holmes.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 7 10 [../pg-tom_sawyer.txt] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in RunTime
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 0 10 [../pg-being_ernest.txt] 1 2024-05-12 16:34:18.291096682 +0800 CST}
+CallTask reply {0 1 10 [../pg-dorian_gray.txt] 1 2024-05-12 16:34:18.291219545 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 2 10 [../pg-frankenstein.txt] 1 2024-05-12 16:34:18.293682393 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 3 10 [../pg-grimm.txt] 1 2024-05-12 16:34:18.296223054 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 4 10 [../pg-huckleberry_finn.txt] 1 2024-05-12 16:34:18.297549151 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 5 10 [../pg-metamorphosis.txt] 1 2024-05-12 16:34:18.299009289 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in callDone
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in TaskDone 2
+CallTask reply {0 6 10 [../pg-sherlock_holmes.txt] 1 2024-05-12 16:34:18.300577354 +0800 CST}
++++Test+++ in DoMapTask
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 7 10 [../pg-tom_sawyer.txt] 1 2024-05-12 16:34:18.301059868 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in TaskDone 2
+{}
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in makeReduceTasks
++++Test+++ in PickReduceFiles
++++Test+++ in PollTask
+make a reduce task : &{1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
+CallTask reply {1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 1 2024-05-12 16:34:18.306971229 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in PollTask
+CallTask reply {1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 1 2024-05-12 16:34:19.30897393 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 1 2024-05-12 16:34:19.311815856 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in callDone
++++Test+++ in PollTask
+CallTask reply {1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 1 2024-05-12 16:34:20.31528916 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 1 2024-05-12 16:34:20.317984716 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in TaskDone 2
+{}
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask
+CallTask reply {1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 1 2024-05-12 16:34:22.327815978 +0800 CST}
++++Test+++ in DoReduceTask
+CallTask reply {1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 1 2024-05-12 16:34:22.328151553 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in TaskDone 2
+{}
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask
+CallTask reply {1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 1 2024-05-12 16:34:23.333096574 +0800 CST}
++++Test+++ in DoReduceTask
+CallTask reply {1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 1 2024-05-12 16:34:23.333145988 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in TaskDone 2
+{}
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 1 2024-05-12 16:34:23.335995997 +0800 CST}
++++Test+++ in DoReduceTask
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
++++Test+++ in callDone
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask
+unexpected EOF
+call failed!
++++Test+++ in DoMapTask
+unexpected EOF
+call failed!
++++Test+++ in DoMapTask
+--- reduce parallelism test: PASS
+*** Starting job count test.
++++Test+++ in MakeCoordinator
++++Test+++ in makeMapTasks
+make a map task : &{0 0 10 [../pg-being_ernest.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 1 10 [../pg-dorian_gray.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 2 10 [../pg-frankenstein.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 3 10 [../pg-grimm.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 4 10 [../pg-huckleberry_finn.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 5 10 [../pg-metamorphosis.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 6 10 [../pg-sherlock_holmes.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 7 10 [../pg-tom_sawyer.txt] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in RunTime
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 0 10 [../pg-being_ernest.txt] 1 2024-05-12 16:34:27.309369199 +0800 CST}
++++Test+++ in DoMapTask
+CallTask reply {0 1 10 [../pg-dorian_gray.txt] 1 2024-05-12 16:34:27.309497778 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 2 10 [../pg-frankenstein.txt] 1 2024-05-12 16:34:30.084752873 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 3 10 [../pg-grimm.txt] 1 2024-05-12 16:34:31.692402508 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 4 10 [../pg-huckleberry_finn.txt] 1 2024-05-12 16:34:34.564966498 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 5 10 [../pg-metamorphosis.txt] 1 2024-05-12 16:34:35.637904944 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 6 10 [../pg-sherlock_holmes.txt] 1 2024-05-12 16:34:38.013012521 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 7 10 [../pg-tom_sawyer.txt] 1 2024-05-12 16:34:38.895261269 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in makeReduceTasks
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
+CallTask reply {1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 1 2024-05-12 16:34:43.132297395 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 1 2024-05-12 16:34:43.135572236 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 1 2024-05-12 16:34:43.138671528 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 1 2024-05-12 16:34:43.142865003 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 1 2024-05-12 16:34:43.146403865 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 1 2024-05-12 16:34:43.149718715 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 1 2024-05-12 16:34:43.153036173 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 1 2024-05-12 16:34:43.156313772 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 1 2024-05-12 16:34:43.159738502 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 1 2024-05-12 16:34:43.162699414 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
+CallTask reply {3 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+!!!Finish!!!
++++Test+++ in PollTask
++++Test+++ in PollTask
+CallTask reply {3 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+!!!Finish!!!
+CallTask reply {3 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+!!!Finish!!!
+--- job count test: PASS
++++Test+++ in PollTask
+CallTask reply {3 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+!!!Finish!!!
+*** Starting early exit test.
++++Test+++ in MakeCoordinator
++++Test+++ in makeMapTasks
+make a map task : &{0 0 10 [../pg-being_ernest.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 1 10 [../pg-dorian_gray.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 2 10 [../pg-frankenstein.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 3 10 [../pg-grimm.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 4 10 [../pg-huckleberry_finn.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 5 10 [../pg-metamorphosis.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 6 10 [../pg-sherlock_holmes.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 7 10 [../pg-tom_sawyer.txt] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in RunTime
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 1 10 [../pg-dorian_gray.txt] 1 2024-05-12 16:34:45.338351649 +0800 CST}
++++Test+++ in DoMapTask
+CallTask reply {0 2 10 [../pg-frankenstein.txt] 1 2024-05-12 16:34:45.338376744 +0800 CST}
++++Test+++ in DoMapTask
+CallTask reply {0 0 10 [../pg-being_ernest.txt] 1 2024-05-12 16:34:45.338229615 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in callDone
+CallTask reply {0 3 10 [../pg-grimm.txt] 1 2024-05-12 16:34:45.340858527 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in TaskDone 2
++++Test+++ in callDone
+{}
++++Test+++ in TaskDone 2
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+{}
+CallTask reply {0 4 10 [../pg-huckleberry_finn.txt] 1 2024-05-12 16:34:45.342333266 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 5 10 [../pg-metamorphosis.txt] 1 2024-05-12 16:34:45.342885468 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in callDone
+{}
++++Test+++ in TaskDone 2
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+{}
+CallTask reply {0 6 10 [../pg-sherlock_holmes.txt] 1 2024-05-12 16:34:45.344790543 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in callDone
+CallTask reply {0 7 10 [../pg-tom_sawyer.txt] 1 2024-05-12 16:34:45.345303673 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in TaskDone 2
+{}
++++Test+++ in callDone
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
++++Test+++ in TaskDone 2
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
+{}
++++Test+++ in callDone
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
++++Test+++ in TaskDone 2
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in makeReduceTasks
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask
+CallTask reply {1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 1 2024-05-12 16:34:46.349013162 +0800 CST}
++++Test+++ in DoReduceTask
+CallTask reply {1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 1 2024-05-12 16:34:46.349067836 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in TaskDone 2
+{}
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask
+CallTask reply {1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 1 2024-05-12 16:34:46.352569235 +0800 CST}
++++Test+++ in DoReduceTask
+CallTask reply {1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 1 2024-05-12 16:34:46.352665661 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in PollTask
+CallTask reply {1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 1 2024-05-12 16:34:46.353551947 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask
+CallTask reply {1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 1 2024-05-12 16:34:46.354897571 +0800 CST}
++++Test+++ in DoReduceTask
+CallTask reply {1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 1 2024-05-12 16:34:46.355002705 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 1 2024-05-12 16:34:46.356131574 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 1 2024-05-12 16:34:46.357370943 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 1 2024-05-12 16:34:46.358673339 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in callDone
++++Test+++ in TaskDone 2
++++Test+++ in TaskDone 2
+{}
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
+CallTask reply {3 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+!!!Finish!!!
++++Test+++ in PollTask
+CallTask reply {3 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+!!!Finish!!!
++++Test+++ in PollTask
+unexpected EOF
+call failed!
++++Test+++ in DoMapTask
+--- early exit test: PASS
+*** Starting crash test.
++++Test+++ in MakeCoordinator
++++Test+++ in makeMapTasks
+make a map task : &{0 0 10 [../pg-being_ernest.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 1 10 [../pg-dorian_gray.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 2 10 [../pg-frankenstein.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 3 10 [../pg-grimm.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 4 10 [../pg-huckleberry_finn.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 5 10 [../pg-metamorphosis.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 6 10 [../pg-sherlock_holmes.txt] 0 0001-01-01 00:00:00 +0000 UTC}
+make a map task : &{0 7 10 [../pg-tom_sawyer.txt] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in RunTime
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 0 10 [../pg-being_ernest.txt] 1 2024-05-12 16:34:52.390621783 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 1 10 [../pg-dorian_gray.txt] 1 2024-05-12 16:34:52.391299183 +0800 CST}
++++Test+++ in DoMapTask
+CallTask reply {0 2 10 [../pg-frankenstein.txt] 1 2024-05-12 16:34:52.391421136 +0800 CST}
++++Test+++ in DoMapTask
+CallTask reply {0 3 10 [../pg-grimm.txt] 1 2024-05-12 16:34:52.391485253 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 5 10 [../pg-metamorphosis.txt] 1 2024-05-12 16:34:53.411750359 +0800 CST}
++++Test+++ in DoMapTask
+CallTask reply {0 4 10 [../pg-huckleberry_finn.txt] 1 2024-05-12 16:34:53.411741618 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 6 10 [../pg-sherlock_holmes.txt] 1 2024-05-12 16:34:53.414493341 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 7 10 [../pg-tom_sawyer.txt] 1 2024-05-12 16:34:53.418386378 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 1 10 [../pg-dorian_gray.txt] 1 2024-05-12 16:35:03.454783707 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 3 10 [../pg-grimm.txt] 1 2024-05-12 16:35:03.456653343 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 7 10 [../pg-tom_sawyer.txt] 1 2024-05-12 16:35:05.464880781 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, len> 0
+CallTask reply {0 1 10 [../pg-dorian_gray.txt] 1 2024-05-12 16:35:15.493934869 +0800 CST}
++++Test+++ in DoMapTask
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in PollTask, WaitingTask
++++Test+++ in CheckProgress
++++Test+++ in makeReduceTasks
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PickReduceFiles
+make a reduce task : &{1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 0 0001-01-01 00:00:00 +0000 UTC}
++++Test+++ in PollTask, before return
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
+CallTask reply {1 8 10 [mr-tmp-0-0 mr-tmp-1-0 mr-tmp-2-0 mr-tmp-3-0 mr-tmp-4-0 mr-tmp-5-0 mr-tmp-6-0 mr-tmp-7-0] 1 2024-05-12 16:35:20.683313398 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 9 10 [mr-tmp-0-1 mr-tmp-1-1 mr-tmp-2-1 mr-tmp-3-1 mr-tmp-4-1 mr-tmp-5-1 mr-tmp-6-1 mr-tmp-7-1] 1 2024-05-12 16:35:20.687608425 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 1 2024-05-12 16:35:20.691009658 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in PollTask
+CallTask reply {1 11 10 [mr-tmp-0-3 mr-tmp-1-3 mr-tmp-2-3 mr-tmp-3-3 mr-tmp-4-3 mr-tmp-5-3 mr-tmp-6-3 mr-tmp-7-3] 1 2024-05-12 16:35:21.51051436 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 12 10 [mr-tmp-0-4 mr-tmp-1-4 mr-tmp-2-4 mr-tmp-3-4 mr-tmp-4-4 mr-tmp-5-4 mr-tmp-6-4 mr-tmp-7-4] 1 2024-05-12 16:35:21.514881788 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 13 10 [mr-tmp-0-5 mr-tmp-1-5 mr-tmp-2-5 mr-tmp-3-5 mr-tmp-4-5 mr-tmp-5-5 mr-tmp-6-5 mr-tmp-7-5] 1 2024-05-12 16:35:21.518482175 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in PollTask
+CallTask reply {1 14 10 [mr-tmp-0-6 mr-tmp-1-6 mr-tmp-2-6 mr-tmp-3-6 mr-tmp-4-6 mr-tmp-5-6 mr-tmp-6-6 mr-tmp-7-6] 1 2024-05-12 16:35:21.549122964 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 15 10 [mr-tmp-0-7 mr-tmp-1-7 mr-tmp-2-7 mr-tmp-3-7 mr-tmp-4-7 mr-tmp-5-7 mr-tmp-6-7 mr-tmp-7-7] 1 2024-05-12 16:35:21.553065521 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 16 10 [mr-tmp-0-8 mr-tmp-1-8 mr-tmp-2-8 mr-tmp-3-8 mr-tmp-4-8 mr-tmp-5-8 mr-tmp-6-8 mr-tmp-7-8] 1 2024-05-12 16:35:21.557197906 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
+CallTask reply {1 17 10 [mr-tmp-0-9 mr-tmp-1-9 mr-tmp-2-9 mr-tmp-3-9 mr-tmp-4-9 mr-tmp-5-9 mr-tmp-6-9 mr-tmp-7-9] 1 2024-05-12 16:35:21.56089637 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
+CallTask reply {1 10 10 [mr-tmp-0-2 mr-tmp-1-2 mr-tmp-2-2 mr-tmp-3-2 mr-tmp-4-2 mr-tmp-5-2 mr-tmp-6-2 mr-tmp-7-2] 1 2024-05-12 16:35:31.620853534 +0800 CST}
++++Test+++ in DoReduceTask
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in PollTask
++++Test+++ in CheckProgress
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
++++Test+++ in callDone
++++Test+++ in TaskDone 2
+{}
++++Test+++ in PollTask
++++Test+++ in CheckProgress
++++Test+++ in PollTask
+CallTask reply {2 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+CallTask reply {3 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+All tasks are in progress, please wait...
+!!!Finish!!!
++++Test+++ in PollTask
+CallTask reply {3 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+!!!Finish!!!
++++Test+++ in PollTask
+CallTask reply {3 0 0 [] 0 0001-01-01 00:00:00 +0000 UTC}
+!!!Finish!!!
++++Test+++ in PollTask
++++Test+++ in PollTask
++++Test+++ in PollTask
+unexpected EOF
+call failed!
++++Test+++ in DoMapTask
+unexpected EOF
+unexpected EOF
+call failed!
+call failed!
++++Test+++ in DoMapTask
++++Test+++ in DoMapTask
+--- crash test: PASS
+*** PASSED ALL TESTS

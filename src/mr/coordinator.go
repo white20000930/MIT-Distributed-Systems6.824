@@ -11,6 +11,7 @@ import (
 	"regexp"
 	"strconv"
 	"sync"
+	"time"
 )
 
 var lock sync.Mutex
@@ -53,8 +54,10 @@ func (c *Coordinator) PollTask(args *struct{}, reply *Task) error {
 			if len(c.Map_TaskChan) > 0 { //have task to do
 				fmt.Println("+++Test+++ in PollTask, len> 0")
 				taskPtr := <-c.Map_TaskChan
-				*reply = *taskPtr
 				taskPtr.State = Working
+				taskPtr.StartTime = time.Now()
+				*reply = *taskPtr
+
 			} else {
 				fmt.Println("+++Test+++ in PollTask, WaitingTask")
 				reply.TaskType = WaitingTask //when no task to do
@@ -69,8 +72,9 @@ func (c *Coordinator) PollTask(args *struct{}, reply *Task) error {
 			{
 				if len(c.Reduce_TaskChan) > 0 { //have task to do
 					taskPtr := <-c.Reduce_TaskChan
-					*reply = *taskPtr
 					taskPtr.State = Working
+					taskPtr.StartTime = time.Now()
+					*reply = *taskPtr
 				} else {
 
 					reply.TaskType = WaitingTask //when no task to do
@@ -120,6 +124,7 @@ func (c *Coordinator) Done() bool {
 	// Your code here.
 	if c.Prog == AllDone {
 		ret = true
+
 	}
 	return ret
 }
@@ -139,7 +144,36 @@ func MakeCoordinator(files []string, nReduce int) *Coordinator {
 	c.makeMapTasks(files)
 
 	c.server()
+
+	go c.RunTime()
+
 	return &c
+}
+
+func (c *Coordinator) RunTime() {
+	fmt.Println("+++Test+++ in RunTime")
+
+	for {
+		time.Sleep(time.Second * 2)
+		lock.Lock()
+		if c.Prog == AllDone {
+			break
+		}
+
+		for _, v := range c.TaskSlice {
+			if v.State == Working {
+				if time.Since(v.StartTime) >= 10*time.Second {
+					v.State = Waitingtodo
+					if v.TaskType == MapTask {
+						c.Map_TaskChan <- v
+					} else if v.TaskType == ReduceTask {
+						c.Reduce_TaskChan <- v
+					}
+				}
+			}
+		}
+		lock.Unlock()
+	}
 }
 
 // 1. make map tasks
